@@ -1,3 +1,24 @@
+/** ===========BODY================**/
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #554e43;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/** ===============================**/
+
 /** ===========HEADER==============**/
 /** ===========NAV=================**/
 .header-logo {
@@ -20,9 +41,17 @@
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-
+.header-nav-menu-item:hover,
+.header-nav-menu-item:focus {
+  color: #404bbf;
+  text-decoration: underline;
+}
 /** ===========ADRESS==============**/
-.header-nav-address-list {
+.header-address {
+  font-style: normal;
+}
+
+.header-address-list {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -30,11 +59,21 @@
   letter-spacing: 0.02em;
   color: #434455;
 }
-a {
+
+.header-address-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
   text-decoration: none;
+  font-style: normal;
 }
-ul {
-  list-style: none;
+
+.header-address-item:hover,
+.header-address-item:focus {
+  text-decoration: none;
+  color: #404bbf;
 }
 /** ===============================**/
 /** ===========MAIN================**/
@@ -51,13 +90,11 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 1440px;
+  height: 600px;
 }
+/**======попрацювати з кнопкою=====**/
 .hero-button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
@@ -65,23 +102,36 @@ ul {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hero-button:hover > .hero-button:focus {
+  background-color: #404bbf;
 }
 .hero-button-text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16;
+  font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  text-align: center;
 }
+
 /** ===============================**/
 /** ===========ABOUT US============**/
 
-.main-aboutus-title {
+.aboutus-title {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
-.main-aboutus-subtittle {
+.aboutus-subtittle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -89,7 +139,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.main-aboutus-text {
+.aboutus-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -100,7 +150,7 @@ ul {
 /** ===============================**/
 /** ===========OUR TEAM============**/
 
-.main-ourteam-title {
+.ourteam-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -110,23 +160,8 @@ ul {
   color: #2e2f42;
 }
 
-.main-ourteam-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
-  border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
-}
-.main-ourteam-item-img {
-}
-.main-ourteam-subtitle {
+.ourteam-item,
+.ourteam-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -135,7 +170,8 @@ ul {
   text-align: center;
   color: #2e2f42;
 }
-.main-ourteam-item-text {
+.ourteam-item,
+.ourteam-item-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -145,8 +181,8 @@ ul {
   color: #434455;
 }
 /** ===============================**/
-/** ===========OUR TEAM============**/
-.main-portfolio-title {
+/** =========OUR PORTFOLIO=========**/
+.portfolio-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -155,43 +191,36 @@ ul {
   text-align: center;
   color: #2e2f42;
 }
-.main-portfolio-item {
+.portfolio-item {
   background: #fff;
 }
-.main-portfolio-item-title {
+.portfolio-item,
+.portfolio-item-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
 }
-.main-portfolio-item-text {
+.portfolio-item,
+.portfolio-item-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-.main-portfolio-item-title .main-portfolio-item-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
-  width: 360px;
-  height: 120px;
+  text-align: center;
 }
 /** ===============================**/
 /** ===============================**/
 /** ===========FOOTER==============**/
 .footer {
   background: #2e2f42;
+  width: 1440px;
+  height: 312px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
