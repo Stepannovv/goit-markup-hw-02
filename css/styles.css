@@ -44,14 +44,6 @@ ol {
   color: #404bbf;
   text-decoration: underline;
 }
-.header-nav-menu-first {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
 
 /** ===========ADRESS==============**/
 .header-address {
