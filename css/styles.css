@@ -1,12 +1,9 @@
 /** ===========BODY================**/
 
-html {
-  box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #554e43;
+  color: #434455
   background-color: #fff;
 }
 a {
@@ -39,6 +36,9 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.header-nav-menu-item {
   color: #2e2f42;
 }
 .header-nav-menu-item:hover,
@@ -90,26 +90,20 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  width: 1440px;
-  height: 600px;
 }
 /**======попрацювати з кнопкою=====**/
 .hero-button {
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   cursor: pointer;
-  display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
-.hero-button:hover > .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 .hero-button-text {
@@ -118,7 +112,7 @@ ol {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 /** ===============================**/
@@ -149,15 +143,19 @@ ol {
 }
 /** ===============================**/
 /** ===========OUR TEAM============**/
+.ourteam {
+  background-color: #f4f4fd;
+}
 
 .ourteam-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .ourteam-item,
@@ -180,6 +178,10 @@ ol {
   text-align: center;
   color: #434455;
 }
+
+.ourteam-list {
+  background-color: #ffffff;
+}
 /** ===============================**/
 /** =========OUR PORTFOLIO=========**/
 .portfolio-title {
@@ -190,6 +192,7 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 .portfolio-item {
   background: #fff;
@@ -219,14 +222,13 @@ ol {
 /** ===========FOOTER==============**/
 .footer {
   background: #2e2f42;
-  width: 1440px;
-  height: 312px;
+
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
