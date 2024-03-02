@@ -41,7 +41,7 @@ ol {
 .header-nav-menu-item .header-nav-menu-link:focus {
   color: #404bbf;
 }
-.header-nav-menu-item.header-nav-menu-link:active {
+.header-nav-menu-item .header-nav-menu-link:active {
   color: #404bbf;
   text-decoration: underline;
 }
