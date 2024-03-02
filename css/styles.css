@@ -36,11 +36,11 @@ ol {
   color: #2e2f42;
 }
 
-.header-nav-menu-item:hover {
+.header-nav-menu-item-first:hover {
   color: #404bbf;
   text-decoration: underline;
 }
-.header-nav-menu-item:focus {
+.header-nav-menu-item-first:focus {
   color: #404bbf;
   text-decoration: underline;
 }
