@@ -45,6 +45,9 @@ ol {
   color: #404bbf;
   text-decoration: underline;
 }
+.header-nav-menu-link {
+  color: #2e2f42;
+}
 
 /** ===========ADRESS==============**/
 .header-address {
